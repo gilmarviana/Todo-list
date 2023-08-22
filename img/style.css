@@ -1,0 +1,84 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url("background.png");
+}
+
+
+.box-center {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; */
+    margin: 100px auto 0; /* 1- Superior - 2 Margem dos lados 3- margem embaixo */
+}
+
+.input-tarefa {
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+}
+.botao-adicionar {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px; /*encima e embaixo 0 - e nas laterais 15px*/
+    cursor: pointer;
+    font-weight: 600;
+    float: right;
+}
+/*Ao passar o mouse no botao*/
+.botao-adicionar:hover {
+    opacity: 0.8;
+}
+/*AO clicar no botao*/
+.botao-adicionar:active {
+    opacity: 0.5;
+}
+
+.lista-tarefas{
+    width: 100%;
+    list-style: none; /*Tirar o ponto da lista*/
+    margin-top: 20px;
+}
+.tarefas{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    display: flex;
+    align-items: center; /* Vertical */
+    justify-content: space-between;  /* Horizontal */
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.tarefas:hover img{
+    opacity: 1;
+    cursor: pointer;
+}
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
